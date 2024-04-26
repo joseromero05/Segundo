@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="usuario.py" media="">
+    <center><h1>CONTACTENOS</h1></center>
+    <style>
+        
+    
+        body {
+            
+            font-family: comic sans ms, Arial, Helvetica, sans-serif;
+            background-color: #7d7db8;
+            color: #ffffff;
+            padding: 200px;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="Asunto"], input[type="Direccion"], input[type="Telefono"] {
+            box-shadow: #3f4f7c 10px 10px 10px ;
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 20px;
+            background-color: #174f70;
+            
+        }
+        button {
+            box-shadow: #55abc0 10px 10px 10px ;
+            background-color: #201a24;
+            color: rgb(186, 186, 206);
+            border-radius: 20px  ;
+            padding: 10px;
+            width: 100%;
+            margin-top: 20px;
+            
+            
+        }
+        a{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<body>
+    <form action="/submit_registration" method="post">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="Asunto">Asunto:</label>
+        <input type="Asunto" id="Asunto" name="Asunto" required>
+
+        <label for="Telefono">Telefono:</label>
+        <input type="Telefono" id="Telefono" name="Telefono" placeholder="Opcional">
+
+        <label for="Direccion">Direccion:</label>
+        <input type="Direccion" id="Direccion" name="Direccion" placeholder="Opcional">
+        <br>
+        <br>
+
+        <label for="Cola">
+            <textarea id="Cola" name="Cola" rows="10" cols="30" placeholder="INQUIETUD"></textarea>
+            </label>
+
+        <label for="terminos">
+        Lei y Acepto Los Terminos y Condiciones: <input id="terminos" type="checkbox" name="terminos" required>
+        </label> 
+
+        <br>
+
+        <label class="g-recaptcha" data-sitekey="6LcfZIYpAAAAAI3Vor7OBbCrn6b4T_nBPm4msD8F"></label>
+        
+        <a href="usuario.py"><button type="submit">Enviar</button></a>
+        <button type="reset">Limpiar</button>
+
+        <a href="mailto:juanjose7028@gmail.com">Correo Electronico</a>
+
+    </form>
+</body>
+</html>

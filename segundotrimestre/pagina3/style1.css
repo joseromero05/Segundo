@@ -1,0 +1,11 @@
+.form-floating{
+    color: aqua;
+    text-align: center;
+    font-size: 3rem;
+}
+.form-control{
+    
+}
+html{
+    background-image: url(img/inicio.avif);
+}
